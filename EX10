@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>User Registration</h1>
+    <p class="subtitle">Please fill in the details below</p>
+    <form method="POST" action="validate.php">
+        <div class="form-group">
+            <label>Name</label>
+            <input type="text" name="name" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+            <label>Password</label>
+            <input type="password" name="password" placeholder="Enter your password" required>
+        </div>
+        <div class="form-group">
+            <label>Credit Card Number</label>
+            <input type="text" name="card" placeholder="16-digit card number" required>
+        </div>
+        <div class="form-group">
+            <label>Email</label>
+            <input type="text" name="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+            <label>Phone Number</label>
+            <input type="text" name="phone" placeholder="10-digit phone number" required>
+        </div>
+        <button type="submit">Register</button>
+    </form>
+</div>
+</body>
+</html>
+Validate.php:
+<?php
+$errors = [];
+$name = $_POST["name"];
+$password = $_POST["password"];
+$card = $_POST["card"];
+$email = $_POST["email"];
+$phone = $_POST["phone"];
+/* Name validation */
+if (!preg_match("/^[A-Za-z ]+$/", $name)) {
+    $errors[] = "Invalid name.";
+}
+if (!preg_match("/^.{8,}$/", $password)) {
+    $errors[] = "Password must contain at least 8 characters.";
+}
+
+if (!preg_match("/^[0-9]{16}$/", $card)) {
+    $errors[] = "Invalid credit card number.";
+}
+if (!preg_match("/^[\w.-]+@[\w.-]+\.[A-Za-z]{2,}$/", $email)) {
+    $errors[] = "Invalid email format.";
+}
+if (!preg_match("/^[0-9]{10}$/", $phone)) {
+    $errors[] = "Invalid phone number.";
+}
+if (empty($errors)) {
+    echo "<h2>Registration Successful!</h2>";
+    echo "Name: " . htmlspecialchars($name) . "<br>";
+    echo "Email: " . htmlspecialchars($email) . "<br>";
+    echo "Phone: " . htmlspecialchars($phone) . "<br>";
+} else {
+    echo "<h2>Validation Errors:</h2>";
+    foreach ($errors as $error) {
+        echo $error . "<br>";
+    }
+}
+?>
