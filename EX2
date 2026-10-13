@@ -1,0 +1,432 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONLINE SHOPPING SYSTEM</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            color: black;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: navy;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #333;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background-color: dodgerblue;
+        }
+
+        section {
+            padding: 25px;
+            margin: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: navy;
+            text-align: center;
+        }
+
+        .home-image {
+            display: block;
+            width: 300px;
+            max-width: 100%;
+            height: 250px;
+            margin: 20px auto;
+        }
+
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .product {
+            border: 1px solid gray;
+            padding: 15px;
+            text-align: center;
+            width: 220px;
+            border-radius: 8px;
+        }
+
+        .product img {
+            width: 180px;
+            height: 150px;
+            max-width: 100%;
+            object-fit: contain;
+        }
+
+        .price {
+            color: green;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        button, input[type="submit"], input[type="reset"] {
+            background-color: navy;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: lightblue;
+        }
+
+        form {
+            max-width: 500px;
+            margin: auto;
+        }
+
+        label {
+            display: block;
+            margin-top: 12px;
+            font-weight: bold;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+
+        .form-buttons {
+            margin-top: 15px;
+        }
+
+        video {
+            display: block;
+            max-width: 100%;
+            margin: auto;
+        }
+
+        footer {
+            background-color: navy;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        @media (max-width: 600px) {
+            nav a {
+                display: inline-block;
+                padding: 6px;
+            }
+
+            section {
+                margin: 10px;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header id="home">
+    <h1>ONLINE SHOPPING SYSTEM</h1>
+    <p>Welcome to Our Online Store</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a> |
+    <a href="#about">About Us</a> |
+    <a href="#products">Products</a> |
+    <a href="#contact">Contact</a> |
+    <a href="#summary">Summary</a> |
+    <a href="#cart">Add to Cart</a> |
+    <a href="#videos">Video</a>
+</nav>
+
+<!-- HOME PAGE -->
+<section>
+    <h2>Home</h2>
+
+    <img class="home-image"
+         src="https://placehold.co/400x300/lightblue/navy?text=Online+Shopping"
+         alt="Online Shopping">
+
+    <h3>
+        The Online Shopping System is a web-based application
+        designed to provide customers with a simple, fast, and
+        convenient way to purchase products through the Internet.
+    </h3>
+</section>
+
+<!-- ABOUT US -->
+<section id="about">
+    <h2><u>About Us</u></h2>
+
+    <h3 style="text-align:center;">Why Shop With Us?</h3>
+
+    <ul>
+        <li>Quality Products</li>
+        <li>Affordable Prices</li>
+        <li>Easy Online Shopping</li>
+        <li>Fast Delivery</li>
+        <li>24x7 Customer Support</li>
+    </ul>
+
+    <p style="text-align:center;">
+        <b>© 2026 Online Shopping System. All Rights Reserved.</b>
+    </p>
+
+    <a href="#home">Go to First Page</a>
+</section>
+
+<!-- PRODUCTS -->
+<section id="products">
+    <h2>PRODUCTS</h2>
+
+    <div class="products">
+
+        <div class="product">
+            <h3>Laptop</h3>
+            <img src="https://placehold.co/220x180?text=Laptop"
+                 alt="Laptop">
+            <p class="price">₹45,000</p>
+            <button onclick="selectProduct('Laptop')">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="product">
+            <h3>Mobile</h3>
+            <img src="https://placehold.co/220x180?text=Mobile"
+                 alt="Mobile">
+            <p class="price">₹20,000</p>
+            <button onclick="selectProduct('Mobile')">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="product">
+            <h3>Smart Watch</h3>
+            <img src="https://placehold.co/220x180?text=Smart+Watch"
+                 alt="Smart Watch">
+            <p class="price">₹3,000</p>
+            <button onclick="selectProduct('Smart Watch')">
+                Add to Cart
+            </button>
+        </div>
+
+    </div>
+
+    <p><a href="#home">Go to First Page</a></p>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2>Customer Support</h2>
+
+    <p>
+        If you have any questions, suggestions, or complaints,
+        please contact us using the details below.
+    </p>
+
+    <table>
+        <tr>
+            <th>Details</th>
+            <th>Information</th>
+        </tr>
+        <tr>
+            <td>Company Name</td>
+            <td>Online Shopping System</td>
+        </tr>
+        <tr>
+            <td>Address</td>
+            <td>123, Shopping Street, Chennai, Tamil Nadu</td>
+        </tr>
+        <tr>
+            <td>Phone</td>
+            <td>+91 98765 43210</td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td>support@onlineshop.com</td>
+        </tr>
+        <tr>
+            <td>Working Hours</td>
+            <td>Monday - Saturday (9 AM to 8 PM)</td>
+        </tr>
+    </table>
+
+    <p><a href="#home">Go to First Page</a></p>
+</section>
+
+<!-- SUMMARY -->
+<section id="summary">
+    <h2>Project Summary</h2>
+
+    <p>
+        The Online Shopping System is a simple web application
+        developed using HTML5 and CSS. It allows customers to
+        browse different products and view product information
+        through a user-friendly interface.
+    </p>
+
+    <p>
+        CSS is used to improve the layout, colours, spacing,
+        and appearance of the website.
+    </p>
+
+    <h3>Features of the System</h3>
+    <ul>
+        <li>Display product images</li>
+        <li>Browse different products</li>
+        <li>Add products to cart</li>
+        <li>Interactive shopping form</li>
+        <li>Customer support information</li>
+        <li>User-friendly interface</li>
+    </ul>
+
+    <h3>Advantages</h3>
+    <ol>
+        <li>Easy online shopping</li>
+        <li>Time-saving</li>
+        <li>Affordable products</li>
+        <li>Convenient product browsing</li>
+        <li>Customer support</li>
+    </ol>
+
+    <h3 style="text-align:center;">
+        Thank You for Visiting Our Online Shopping System!
+    </h3>
+
+    <p style="text-align:center;">
+        © 2026 Online Shopping System. All Rights Reserved.
+    </p>
+
+    <a href="#home">Go to First Page</a>
+</section>
+
+<!-- ADD TO CART -->
+<section id="cart">
+    <h2>Add to Cart</h2>
+
+    <form id="cartForm">
+
+        <label for="product">Product Name:</label>
+        <input type="text" id="product"
+               placeholder="Enter Product Name" required>
+
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity"
+               min="1" value="1" required>
+
+        <label for="size">Size:</label>
+        <select id="size">
+            <option>Small</option>
+            <option selected>Medium</option>
+            <option>Large</option>
+            <option>Not Applicable</option>
+        </select>
+
+        <label for="address">Delivery Address:</label>
+        <textarea id="address" rows="4"
+                  placeholder="Enter Delivery Address"
+                  required></textarea>
+
+        <div class="form-buttons">
+            <input type="submit" value="Add to Cart">
+            <input type="reset" value="Clear">
+        </div>
+
+        <p id="message"></p>
+    </form>
+
+    <p style="text-align:center;">
+        Thank You for Shopping with Us!
+    </p>
+
+    <a href="#home">Go to First Page</a>
+</section>
+
+<!-- VIDEO -->
+<section id="videos">
+    <h2>Video Shopping</h2>
+
+    <video width="400" controls>
+        <source src="videos/shopping.mp4" type="video/mp4">
+        Your browser does not support the video element.
+    </video>
+
+    <p>
+        Place your shopping video inside a folder named
+        <b>videos</b> and name the file <b>shopping.mp4</b>.
+    </p>
+
+    <a href="#home">Go to First Page</a>
+</section>
+
+<footer>
+    <p>© 2026 Online Shopping System. All Rights Reserved.</p>
+</footer>
+
+<script>
+    function selectProduct(name) {
+        document.getElementById("product").value = name;
+
+        document.getElementById("cart").scrollIntoView({
+            behavior: "smooth"
+        });
+    }
+
+    document.getElementById("cartForm").addEventListener(
+        "submit", function(event) {
+            event.preventDefault();
+
+            const product =
+                document.getElementById("product").value;
+
+            const quantity =
+                document.getElementById("quantity").value;
+
+            document.getElementById("message").textContent =
+                quantity + " " + product +
+                "(s) added to the demo cart successfully!";
+        }
+    );
+</script>
+
+</body>
+</html>
+```
