@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library>
+<book id="B01">
+<title>The Great Gatsby</title>
+<author>F. Scott Fitzgerald</author>
+<genre>Classic Fiction</genre>
+<year>1925</year>
+<price currency="INR">799.00</price>
+<status>Available</status>
+</book>
+<book id="B02">
+<title>To Kill a Mockingbird</title>
+<author>Harper Lee</author>
+<genre>Drama</genre>
+<year>1960</year>
+<price currency="INR">650.00</price>
+<status>Available</status>
+</book>
+<book id="B03">
+<title>1984</title>
+<author>George Orwell</author>
+<genre>Dystopian</genre>
+<year>1949</year>
+<price currency="INR">499.00</price>
+<status>Borrowed</status>
+</book>
+<book id="B04">
+<title>Dune</title>
+<author>Frank Herbert</author>
+<genre>Sci-Fi</genre>
+<year>1965</year>
+<price currency="INR">950.00</price>
+<status>Available</status>
+</book>
+<book id="B05">
+<title>Harry Potter and the Sorcerer's Stone</title>
+<author>J.K. Rowling</author>
+<genre>Fantasy</genre>
+<year>1997</year>
+<price currency="INR">899.00</price>
+<status>Available</status>
+</book>
+<book id="B06">
+<title>The Hobbit</title>
+<author>J.R.R. Tolkien</author>
+<genre>Fantasy</genre>
+<year>1937</year>
+<price currency="INR">750.00</price>
+<status>Borrowed</status>
+</book>
+<book id="B07">
+<title>The Catcher in the Rye</title>
+<author>J.D. Salinger</author>
+<genre>Classic Fiction</genre>
+<year>1951</year>
+<price currency="INR">599.00</price>
+<status>Available</status>
+</book>
+<book id="B08">
+<title>Pride and Prejudice</title>
+<author>Jane Austen</author>
+<genre>Romance</genre>
+<year>1813</year>
+<price currency="INR">399.00</price>
+<status>Available</status>
+</book>
+<book id="B09">
+<title>The Alchemist</title>
+<author>Paulo Coelho</author>
+<genre>Adventure / Philosophy</genre>
+<year>1988</year>
+<price currency="INR">350.00</price>
+<status>Available</status>
+</book>
+<book id="B10">
+<title>Sapiens: A Brief History of Humankind</title>
+<author>Yuval Noah Harari</author>
+<genre>History / Non-Fiction</genre>
+<year>2011</year>
+<price currency="INR">1199.00</price>
+<status>Borrowed</status>
+</book></library>
