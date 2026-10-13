@@ -1,0 +1,457 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONLINE SHOPPING SYSTEM</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            color: black;
+            margin: 20px;
+        }
+
+        h1, h2, h3 {
+            text-align: center;
+        }
+
+        nav {
+            background-color: lightblue;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            margin: 8px;
+        }
+
+        nav a:hover {
+            color: red;
+        }
+
+        section {
+            padding: 20px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid lightgray;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin: auto;
+            width: 80%;
+        }
+
+        th, td {
+            border: 2px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: lightblue;
+        }
+
+        form {
+            text-align: center;
+            background-color: lightyellow;
+            padding: 20px;
+        }
+
+        input, select, textarea {
+            padding: 8px;
+            margin: 5px;
+            max-width: 90%;
+        }
+
+        button, input[type="submit"], input[type="reset"] {
+            background-color: lightblue;
+            padding: 10px 15px;
+            border: 1px solid black;
+            cursor: pointer;
+        }
+
+        footer {
+            text-align: center;
+            background-color: lightblue;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>ONLINE SHOPPING SYSTEM</h1>
+
+    <nav>
+        <a href="#home">Home</a> |
+        <a href="#about">About Us</a> |
+        <a href="#products">Products</a> |
+        <a href="#contact">Contact</a> |
+        <a href="#summary">Summary</a> |
+        <a href="#cart">Add to Cart</a> |
+        <a href="#videos">Video</a>
+    </nav>
+
+    <!-- HOME -->
+    <section id="home">
+        <h2>Welcome to Online Shopping</h2>
+
+        <center>
+            <img
+                src="https://placehold.co/500x300?text=Online+Shopping"
+                alt="Online Shopping"
+                width="400">
+        </center>
+
+        <h3>
+            The Online Shopping System is a web-based application
+            designed to provide customers with a simple, fast, and
+            convenient way to purchase products through the Internet.
+        </h3>
+    </section>
+
+    <!-- ABOUT US -->
+    <section id="about">
+        <h1><u>About Us</u></h1>
+
+        <h2>Why Shop With Us?</h2>
+
+        <ul>
+            <h3>
+                <li>Quality Products</li>
+                <li>Affordable Prices</li>
+                <li>Easy Online Shopping</li>
+                <li>Fast Delivery</li>
+                <li>24x7 Customer Support</li>
+            </h3>
+        </ul>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section id="products">
+        <h1>PRODUCTS</h1>
+
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Image</th>
+                <th>Price</th>
+            </tr>
+
+            <tr>
+                <td>Laptop</td>
+                <td>
+                    <img
+                        src="https://placehold.co/220x150?text=Laptop"
+                        alt="Laptop"
+                        width="220">
+                </td>
+                <td>₹45,000</td>
+            </tr>
+
+            <tr>
+                <td>Mobile</td>
+                <td>
+                    <img
+                        src="https://placehold.co/220x150?text=Mobile"
+                        alt="Mobile"
+                        width="220">
+                </td>
+                <td>₹20,000</td>
+            </tr>
+
+            <tr>
+                <td>Smart Watch</td>
+                <td>
+                    <img
+                        src="https://placehold.co/220x150?text=Smart+Watch"
+                        alt="Smart Watch"
+                        width="220">
+                </td>
+                <td>₹3,000</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <h1>Customer Support</h1>
+
+        <h3>
+            If you have any questions, suggestions, or complaints,
+            please contact us using the details below.
+        </h3>
+
+        <table>
+            <tr>
+                <th>Details</th>
+                <th>Information</th>
+            </tr>
+
+            <tr>
+                <td>Company Name</td>
+                <td>Online Shopping System</td>
+            </tr>
+
+            <tr>
+                <td>Address</td>
+                <td>123, Shopping Street, Chennai, Tamil Nadu</td>
+            </tr>
+
+            <tr>
+                <td>Phone</td>
+                <td>+91 98765 43210</td>
+            </tr>
+
+            <tr>
+                <td>Email</td>
+                <td>support@onlineshop.com</td>
+            </tr>
+
+            <tr>
+                <td>Working Hours</td>
+                <td>Monday - Saturday (9 AM to 8 PM)</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- PROJECT SUMMARY -->
+    <section id="summary">
+        <h1>Project Summary</h1>
+
+        <h3>
+            The Online Shopping System is a simple web application
+            developed using HTML5. It allows customers to browse
+            products, view product images and videos, and use an
+            easy-to-understand shopping interface.
+        </h3>
+
+        <p>
+            The system demonstrates HTML5 features such as multimedia,
+            drag-and-drop, image maps, geolocation, and interactive forms.
+        </p>
+
+        <h3>Features of the System</h3>
+
+        <ul>
+            <li>Display product images and videos</li>
+            <li>Browse different products</li>
+            <li>Add products to cart using drag and drop</li>
+            <li>Interactive purchase form</li>
+            <li>View store location using geolocation</li>
+            <li>Easy and user-friendly interface</li>
+        </ul>
+
+        <h3>Advantages</h3>
+
+        <ol>
+            <li>Easy online shopping</li>
+            <li>Time-saving</li>
+            <li>Affordable products</li>
+            <li>Fast delivery</li>
+            <li>Customer support</li>
+        </ol>
+
+        <h3>Thank You for Visiting Our Online Shopping System!</h3>
+    </section>
+
+    <!-- ADD TO CART -->
+    <section id="cart">
+        <h1>Add to Cart</h1>
+
+        <form onsubmit="addToCart(event)">
+            <label><b>Product Name:</b></label><br>
+
+            <select id="product" required>
+                <option value="">Select Product</option>
+                <option value="Laptop">Laptop - ₹45,000</option>
+                <option value="Mobile">Mobile - ₹20,000</option>
+                <option value="Smart Watch">Smart Watch - ₹3,000</option>
+            </select>
+
+            <br><br>
+
+            <label><b>Quantity:</b></label><br>
+            <input
+                type="number"
+                id="quantity"
+                min="1"
+                value="1"
+                required>
+
+            <br><br>
+
+            <label><b>Size:</b></label><br>
+
+            <select id="size">
+                <option>Small</option>
+                <option>Medium</option>
+                <option>Large</option>
+                <option>Not Applicable</option>
+            </select>
+
+            <br><br>
+
+            <label><b>Delivery Address:</b></label><br>
+
+            <textarea
+                id="address"
+                rows="4"
+                cols="35"
+                placeholder="Enter your delivery address"
+                required></textarea>
+
+            <br><br>
+
+            <input type="submit" value="Add to Cart">
+            <input type="reset" value="Clear">
+        </form>
+
+        <h2>Cart Details</h2>
+        <div id="cartDetails">
+            <p style="text-align:center;">Your cart is empty.</p>
+        </div>
+    </section>
+
+    <!-- VIDEO -->
+    <section id="videos">
+        <h1>Video Shopping</h1>
+
+        <center>
+            <video width="400" controls>
+                <source src="videos/shopping.mp4" type="video/mp4">
+                Your browser does not support the video element.
+            </video>
+        </center>
+
+        <p style="text-align:center;">
+            Place your shopping video in a folder named "videos"
+            and save it as "shopping.mp4".
+        </p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>
+            <b>&copy; 2026 Online Shopping System. All Rights Reserved.</b>
+        </p>
+        <a href="#home">Go to First Page</a>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        const prices = {
+            "Laptop": 45000,
+            "Mobile": 20000,
+            "Smart Watch": 3000
+        };
+
+        let cart = [];
+
+        function addToCart(event) {
+            event.preventDefault();
+
+            const product = document.getElementById("product").value;
+            const quantity = Number(
+                document.getElementById("quantity").value
+            );
+            const size = document.getElementById("size").value;
+            const address = document.getElementById("address").value.trim();
+
+            if (!product || quantity < 1 || !address) {
+                alert("Please enter all required details.");
+                return;
+            }
+
+            cart.push({
+                product: product,
+                quantity: quantity,
+                size: size,
+                address: address,
+                total: prices[product] * quantity
+            });
+
+            displayCart();
+
+            alert("Product added to cart successfully!");
+        }
+
+        function displayCart() {
+            const cartDetails = document.getElementById("cartDetails");
+
+            cartDetails.innerHTML = "";
+
+            if (cart.length === 0) {
+                cartDetails.textContent = "Your cart is empty.";
+                return;
+            }
+
+            const table = document.createElement("table");
+
+            table.innerHTML = `
+                <tr>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Size</th>
+                    <th>Total Price</th>
+                    <th>Action</th>
+                </tr>
+            `;
+
+            let grandTotal = 0;
+
+            cart.forEach(function(item, index) {
+                grandTotal += item.total;
+
+                const row = table.insertRow();
+
+                const values = [
+                    item.product,
+                    item.quantity,
+                    item.size,
+                    "₹" + item.total.toLocaleString("en-IN")
+                ];
+
+                values.forEach(function(value) {
+                    const cell = row.insertCell();
+                    cell.textContent = value;
+                });
+
+                const actionCell = row.insertCell();
+                const removeButton = document.createElement("button");
+
+                removeButton.textContent = "Remove";
+                removeButton.type = "button";
+
+                removeButton.onclick = function() {
+                    cart.splice(index, 1);
+                    displayCart();
+                };
+
+                actionCell.appendChild(removeButton);
+            });
+
+            cartDetails.appendChild(table);
+
+            const totalHeading = document.createElement("h3");
+            totalHeading.textContent =
+                "Grand Total: ₹" + grandTotal.toLocaleString("en-IN");
+
+            cartDetails.appendChild(totalHeading);
+        }
+    </script>
+
+</body>
+</html>
+```
