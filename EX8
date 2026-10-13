@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ticket Booking System</title>
+</head>
+<body>
+
+    <h1>Ticket Booking System</h1>
+    <h2>Book a Ticket</h2>
+
+    <form action="book" method="post">
+
+        <label>Passenger Name:</label>
+        <input type="text" name="passengerName" required>
+        <br><br>
+
+        <label>Email:</label>
+        <input type="email" name="email" required>
+        <br><br>
+
+        <label>Phone:</label>
+        <input type="text" name="phone" required>
+        <br><br>
+
+        <label>Source:</label>
+        <input type="text" name="source" required>
+        <br><br>
+
+        <label>Destination:</label>
+        <input type="text" name="destination" required>
+        <br><br>
+
+        <label>Travel Date:</label>
+        <input type="date" name="travelDate" required>
+        <br><br>
+
+        <label>Ticket Type:</label>
+        <select name="ticketType" required>
+            <option value="">-- Select Ticket Type --</option>
+            <option value="Bus">Bus</option>
+            <option value="Train">Train</option>
+            <option value="Flight">Flight</option>
+        </select>
+        <br><br>
+
+        <label>Number of Tickets:</label>
+        <input type="number" name="numberOfTickets" min="1" required>
+        <br><br>
+
+        <label>Amount:</label>
+        <input type="number" name="amount" step="0.01" min="0" required>
+        <br><br>
+
+        <input type="submit" value="Book Ticket">
+
+    </form>
+
+    <br><br>
+
+    <a href="book">View Booked Tickets</a>
+
+</body>
+</html>
