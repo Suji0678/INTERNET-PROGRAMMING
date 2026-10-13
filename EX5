@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Quiz</title>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+
+<form action="ExamServlet" method="post">
+
+Name:
+
+<input type="text" name="username" required>
+
+<br><br>
+
+1. What is the capital of France?<br>
+
+<input type="radio" name="q1" value="Paris" required> Paris<br>
+
+<input type="radio" name="q1" value="London"> London<br>
+
+<input type="radio" name="q1" value="Berlin"> Berlin<br><br>
+
+2. What is 2+2?<br>
+
+<input type="radio" name="q2" value="3" required> 3<br>
+
+<input type="radio" name="q2" value="4"> 4<br>
+
+<input type="radio" name="q2" value="5"> 5<br><br>
+
+3. What is the national bird of India?<br>
+
+<input type="radio" name="q3" value="Peacock" required> Peacock<br>
+
+<input type="radio" name="q3" value="Dove"> Dove<br>
+
+<input type="radio" name="q3" value="Crow"> Crow<br><br>
+
+4. What is the universal selector?<br>
+
+<input type="radio" name="q4" value="*" required> *<br>
+
+<input type="radio" name="q4" value="@"> @<br>
+
+<input type="radio" name="q4" value="&amp;"> &amp;<br><br>
+
+5. What is the purpose of CSS?<br>
+
+<input type="radio" name="q5" value="style" required> Style<br>
+
+<input type="radio" name="q5" value="html"> HTML<br>
+
+<input type="radio" name="q5" value="interactive"> Interactive<br><br>
+
+<input type="submit" value="Submit">
+
+</form>
+
+</body>
+
+</html>
